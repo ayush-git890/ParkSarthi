@@ -17,7 +17,7 @@ class AboutUs extends StatelessWidget {
         centerTitle: true,
         backgroundColor: blueColor,
         title: const Text(
-          "SMART CAR PARKING",
+          "ParkSathi",
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.w600,
@@ -60,6 +60,7 @@ class AboutUs extends StatelessWidget {
               ),
             ],
           ),
+          const SizedBox(height: 20),
           const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -76,19 +77,27 @@ class AboutUs extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 20),
+          const Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Flexible(
+                child: Text(
+                  "                   For Support \ncontact us:mohit.saubhri_cs21@gla.ac.in,ayush.agarwal_cs21@gla.a.in",
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.grey,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               InkWell(
-                onTap: () async {
-                  var url = Uri.parse(
-                      "https://github.com/MrNitishroy/Smart_car_parking_IOT");
-                  if (await canLaunchUrl(url)) {
-                    await launchUrl(url);
-                  } else {
-                    print("Could not launch $url");
-                  }
-                },
+                onTap: () async {},
                 child: Container(
                   padding: const EdgeInsets.all(2),
                   width: 50,
@@ -124,7 +133,15 @@ class AboutUs extends StatelessWidget {
               ),
               const SizedBox(width: 20),
               InkWell(
-                onTap: () async {},
+                onTap: () async {
+                  var url =
+                      Uri.parse("https://github.com/ayush-git890/ParkSarthi");
+                  if (await canLaunchUrl(url)) {
+                    await launchUrl(url);
+                  } else {
+                    print("Could not launch $url");
+                  }
+                },
                 child: Container(
                   padding: const EdgeInsets.all(2),
                   width: 50,

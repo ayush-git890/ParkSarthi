@@ -189,7 +189,7 @@ class _EmailVerificationState extends State<EmailVerification> {
                                   String pass = "zglp vhcm oetx ikhe";
                                   final smtpServer = gmail(email, pass);
                                   final message = Message()
-                                    ..from = Address(email, "Stroke Connect")
+                                    ..from = Address(email, "ParkSarthi")
                                     ..recipients.add(LoginSignupEmail.email
                                         .trim()
                                         .toString())
